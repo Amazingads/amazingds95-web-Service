@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali Special - AmazingAds95 | Professional Restaurant Websites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'diwali': {
+                            'gold': '#FFD700',
+                            'orange': '#FF8C00',
+                            'red': '#DC2626',
+                            'deep-red': '#991B1B',
+                            'light': '#FEF3C7',
+                            'dark': '#1a0c08'
+                        }
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'sparkle': 'sparkle 2s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+                        'firework': 'firework 2s ease-out infinite',
+                        'cracker': 'cracker 1.5s ease-in-out infinite',
+                        'light': 'light 3s ease-in-out infinite',
+                        'fade-in': 'fade-in 1s ease-in-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        sparkle: {
+                            '0%, 100%': { opacity: 1, transform: 'scale(1)' },
+                            '50%': { opacity: 0.7, transform: 'scale(1.1)' },
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 5px #FFD700, 0 0 10px #FFD700' },
+                            '100%': { boxShadow: '0 0 20px #FFD700, 0 0 40px #FFD700' },
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { 
+                                boxShadow: '0 0 5px #FFD700, 0 0 10px #FFD700',
+                                transform: 'scale(1)'
+                            },
+                            '50%': { 
+                                boxShadow: '0 0 20px #FFD700, 0 0 30px #FFD700',
+                                transform: 'scale(1.05)'
+                            },
+                        },
+                        firework: {
+                            '0%': { transform: 'translate(0, 0) scale(0)', opacity: 1 },
+                            '50%': { transform: 'translate(var(--tx), var(--ty)) scale(1)', opacity: 0.8 },
+                            '100%': { transform: 'translate(var(--tx), var(--ty)) scale(0)', opacity: 0 },
+                        },
+                        cracker: {
+                            '0%, 100%': { transform: 'scale(1) rotate(0deg)', opacity: 0.8 },
+                            '50%': { transform: 'scale(1.2) rotate(5deg)', opacity: 1 },
+                        },
+                        light: {
+                            '0%, 100%': { opacity: 0.3 },
+                            '50%': { opacity: 1 },
+                        },
+                        'fade-in': {
+                            '0%': { opacity: 0, transform: 'translateY(20px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a0c08 0%, #2d1810 50%, #1a0c08 100%);
+            color: #f4e4c1;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        .diwali-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(255, 140, 0, 0.1) 0%, transparent 50%),
+                linear-gradient(135deg, rgba(26, 12, 8, 0.95) 0%, rgba(45, 24, 16, 0.95) 50%, rgba(26, 12, 8, 0.95) 100%);
+            z-index: -2;
+        }
+        
+        .diwali-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23FFD700' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+            z-index: -1;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(26, 12, 8, 0.85), rgba(45, 24, 16, 0.9)), 
+                        url('https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .plan-card {
+            background: linear-gradient(145deg, rgba(45, 24, 16, 0.95) 0%, rgba(26, 12, 8, 0.95) 100%);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 20px;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: visible;
+             margin-top: 20px;
+        }
+        
+        .plan-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+            transition: transform 0.6s ease;
+            z-index: -1;
+        }
+        
+        .plan-card:hover::before {
+            transform: rotate(180deg);
+        }
+        
+        .plan-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(255, 215, 0, 0.6);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+        }
+        
+.diwali-badge {
+    background: linear-gradient(135deg, #FFD700, #FF8C00);
+    color: #1a0c08;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 30px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+    animation: glow 2s ease-in-out infinite alternate;
+    z-index: 20;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    white-space: nowrap;
+    min-width: 120px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .diwali-badge {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+        top: -12px;
+        right: 15px;
+        min-width: 100px;
+        letter-spacing: 0.5px;
+    }
+}
+        
+        .price-old {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .price-old::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #DC2626;
+            transform: rotate(-10deg);
+        }
+        
+        .feature-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+        }
+        
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #FFD700;
+            font-weight: bold;
+        }
+        
+        .diwali-btn {
+            background: linear-gradient(135deg, #FFD700, #FF8C00);
+            color: #1a0c08;
+            font-weight: 600;
+            padding: 14px 28px;
+            border-radius: 30px;
+            border: 2px solid #FFD700;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        .diwali-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+        }
+        
+        .floating-diya {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .sparkle {
+            animation: sparkle 2s ease-in-out infinite;
+        }
+        
+        .firework {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #FFD700;
+            box-shadow: 0 0 10px #FFD700;
+            animation: firework 2s ease-out infinite;
+            z-index: 1;
+        }
+        
+        .cracker {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(45deg, #FFD700, #FF8C00);
+            border-radius: 4px;
+            animation: cracker 1.5s ease-in-out infinite;
+            z-index: 1;
+        }
+        
+        .cracker::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 15px;
+            background: #DC2626;
+            border-radius: 2px;
+        }
+        
+        .light {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,215,0,0.3) 0%, rgba(255,215,0,0) 70%);
+            animation: light 3s ease-in-out infinite;
+            z-index: 1;
+        }
+        
+        .timer-box {
+            background: rgba(26, 12, 8, 0.8);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 15px;
+            padding: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .demo-card {
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 215, 0, 0.2);
+            background: linear-gradient(145deg, rgba(45, 24, 16, 0.9) 0%, rgba(26, 12, 8, 0.9) 100%);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .demo-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 215, 0, 0.5);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
+        }
+        
+        .language-toggle {
+            background: rgba(26, 12, 8, 0.8);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 30px;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            z-index: 50;
+        }
+        
+        .language-toggle:hover {
+            background: rgba(255, 215, 0, 0.1);
+        }
+        
+        .hindi-text {
+            display: none;
+        }
+        
+        .language-hindi .hindi-text {
+            display: block;
+        }
+        
+        .language-hindi .english-text {
+            display: none;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            animation: pulse-glow 2s ease-in-out infinite;
+            border: 2px solid white;
+        }
+        
+        .rangoli-pattern {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(255,215,0,0.1) 0%, rgba(255,215,0,0) 70%);
+            border-radius: 50%;
+            filter: blur(20px);
+            z-index: 1;
+        }
+        
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 50%;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+        
+        .icon-svg {
+            width: 40px;
+            height: 40px;
+            fill: #FFD700;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #FFD700, #FF8C00);
+            border-radius: 2px;
+        }
+        
+        @media (max-width: 768px) {
+            .plan-card {
+                margin-bottom: 30px;
+            }
+            
+            .hero-section {
+                background-attachment: scroll;
+            }
+            
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 55px;
+                height: 55px;
+                font-size: 22px;
+            }
+            
+            .rangoli-pattern {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .icon-container {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .icon-svg {
+                width: 35px;
+                height: 35px;
+            }
+        }
+        
+        .fade-in {
+            animation: fade-in 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="diwali-bg"></div>
+    <div class="diwali-pattern"></div>
+    
+    <!-- Diwali Animation Elements -->
+    <div class="firework" style="--tx: 100px; --ty: -100px; top: 15%; left: 10%; animation-delay: 0s;"></div>
+    <div class="firework" style="--tx: -80px; --ty: -120px; top: 20%; right: 15%; animation-delay: 0.5s;"></div>
+    <div class="firework" style="--tx: 120px; --ty: 80px; bottom: 25%; left: 20%; animation-delay: 1s;"></div>
+    <div class="firework" style="--tx: -100px; --ty: 100px; bottom: 15%; right: 25%; animation-delay: 1.5s;"></div>
+    
+    <!-- Crackers -->
+    <div class="cracker" style="top: 10%; left: 5%; animation-delay: 0.2s;"></div>
+    <div class="cracker" style="top: 15%; right: 8%; animation-delay: 0.7s;"></div>
+    <div class="cracker" style="bottom: 10%; left: 8%; animation-delay: 1.2s;"></div>
+    <div class="cracker" style="bottom: 15%; right: 5%; animation-delay: 1.7s;"></div>
+    
+    <!-- Lights -->
+    <div class="light" style="top: 5%; left: 20%; animation-delay: 0s;"></div>
+    <div class="light" style="top: 10%; right: 25%; animation-delay: 1s;"></div>
+    <div class="light" style="bottom: 5%; left: 30%; animation-delay: 2s;"></div>
+    <div class="light" style="bottom: 10%; right: 20%; animation-delay: 1.5s;"></div>
+    
+    <!-- Rangoli Patterns -->
+    <div class="rangoli-pattern" style="top: 5%; left: 5%;"></div>
+    <div class="rangoli-pattern" style="top: 5%; right: 5%;"></div>
+    <div class="rangoli-pattern" style="bottom: 5%; left: 5%;"></div>
+    <div class="rangoli-pattern" style="bottom: 5%; right: 5%;"></div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919422269921?text=Hi%20AmazingAds95!%20I'm%20interested%20in%20your%20Diwali%20website%20offer.%20Please%20share%20more%20details." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Language Toggle -->
+    <div class="fixed top-5 right-5 z-50">
+        <div class="language-toggle" id="languageToggle">
+            <span class="english-text">English</span>
+            <span class="hindi-text">हिंदी</span>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="hero-section py-16 md:py-24">
+        <div class="container mx-auto px-4 max-w-6xl relative z-10">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-playfair font-bold text-diwali-gold mb-4 sparkle">
+                    <span class="english-text">AmazingAds95</span>
+                    <span class="hindi-text">अमेजिंगएड्स95</span>
+                </h1>
+                <div class="w-24 h-1 bg-diwali-gold mx-auto mb-6"></div>
+                <p class="text-lg text-diwali-light opacity-90 max-w-2xl mx-auto">
+                    <span class="english-text">Professional Website Solutions for Restaurants</span>
+                    <span class="hindi-text">रेस्तरां के लिए पेशेवर वेबसाइट समाधान</span>
+                </p>
+            </div>
+            
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-playfair font-bold text-diwali-gold mb-4 sparkle">
+                    <span class="english-text">दिवाली विशेष ऑफर</span>
+                    <span class="hindi-text">दिवाली विशेष ऑफर</span>
+                </h2>
+                <p class="text-xl md:text-2xl text-diwali-light mb-6 max-w-3xl mx-auto">
+                    <span class="english-text">Get a professional restaurant website in just 2 days!</span>
+                    <span class="hindi-text">केवल 2 दिनों में पेशेवर रेस्तरां वेबसाइट बनवाएं!</span>
+                </p>
+                
+                <!-- Offer Validity -->
+                <div class="flex justify-center mb-8">
+                    <div class="timer-box">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-diwali-gold mb-2">
+                                <span class="english-text">Offer Valid Until</span>
+                                <span class="hindi-text">ऑफर वैध है</span>
+                            </div>
+                            <div class="text-xl text-diwali-light">
+                                <span class="english-text">October 18-23, 2025</span>
+                                <span class="hindi-text">18-23 अक्टूबर, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-r from-diwali-red/20 to-diwali-orange/20 p-4 rounded-2xl border border-diwali-gold/30 max-w-2xl mx-auto">
+                    <p class="text-lg text-diwali-light">
+                        <i class="fas fa-bolt text-diwali-gold mr-2"></i>
+                        <span class="english-text"><span class="font-bold">Website Ready in Just 2 Days!</span> Get your professional restaurant website live before Diwali.</span>
+                        <span class="hindi-text"><span class="font-bold">वेबसाइट सिर्फ 2 दिनों में तैयार!</span> दिवाली से पहले अपनी पेशेवर रेस्तरां वेबसाइट लाइव करें।</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Plans -->
+    <section id="packages" class="py-16 relative z-10 fade-in">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-playfair font-bold text-diwali-gold section-title">
+                    <span class="english-text">Diwali Special Packages</span>
+                    <span class="hindi-text">दिवाली विशेष पैकेज</span>
+                </h2>
+                <p class="text-xl text-diwali-light max-w-3xl mx-auto">
+                    <span class="english-text">Choose the perfect package for your restaurant with exclusive Diwali discounts</span>
+                    <span class="hindi-text">विशेष दिवाली छूट के साथ अपने रेस्तरां के लिए सही पैकेज चुनें</span>
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Basic Plan -->
+                <div class="plan-card p-6 relative">
+                    <div class="diwali-badge">
+                        <span class="english-text">Most Popular</span>
+                        <span class="hindi-text">सबसे लोकप्रिय</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="icon-container">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-playfair font-bold text-diwali-gold mb-2">
+                            <span class="english-text">Basic</span>
+                            <span class="hindi-text">बेसिक</span>
+                        </h3>
+                        <div class="text-diwali-light mb-4">
+                            <span class="english-text">Perfect for getting started</span>
+                            <span class="hindi-text">शुरुआत के लिए बिल्कुल सही</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="flex justify-center items-baseline">
+                            <span class="text-4xl font-bold text-diwali-gold">₹3,499</span>
+                            <span class="text-lg text-diwali-light ml-2 price-old">₹3,999</span>
+                        </div>
+                        <div class="text-sm text-diwali-light mt-1">
+                            <span class="english-text">Post-Diwali: ₹3,999</span>
+                            <span class="hindi-text">दिवाली के बाद: ₹3,999</span>
+                        </div>
+                    </div>
+                    
+                  <ul class="feature-list mb-8">
+    <li>
+        <span class="english-text">Fully mobile-friendly website</span>
+        <span class="hindi-text">पूरी तरह से मोबाइल-फ्रेंडली वेबसाइट</span>
+    </li>
+    <li>
+        <span class="english-text">Menu display with pricing & categories</span>
+        <span class="hindi-text">मूल्य और श्रेणियों के साथ मेनू डिस्प्ले</span>
+    </li>
+    <li>
+        <span class="english-text">Direct WhatsApp ordering (no cart)</span>
+        <span class="hindi-text">डायरेक्ट व्हाट्सएप ऑर्डरिंग (कार्ट के बिना)</span>
+    </li>
+    <li>
+        <span class="english-text">SEO-friendly structure</span>
+        <span class="hindi-text">एसईओ-फ्रेंडली स्ट्रक्चर</span>
+    </li>
+    <li>
+        <span class="english-text">Custom logo, colors, and branding</span>
+        <span class="hindi-text">कस्टम लोगो, रंग और ब्रांडिंग</span>
+    </li>
+    <li>
+        <span class="english-text">1 Year Free Hosting & Domain</span>
+        <span class="hindi-text">1 साल मुफ्त होस्टिंग और डोमेन</span>
+    </li>
+</ul>
+                    
+                    <div class="text-center mb-4">
+                        <div class="text-diwali-light text-sm mb-2">
+                            <span class="english-text">Maintenance: ₹300/month</span>
+                            <span class="hindi-text">मेंटेनेंस: ₹300/महीना</span>
+                        </div>
+                        <a href="https://wa.me/919422269921?text=Hi%20AmazingAds95!%20I'm%20interested%20in%20your%20Basic%20website%20package%20for%20₹3,499.%20Please%20share%20more%20details." class="diwali-btn w-full" target="_blank">
+                            <span class="english-text">Get Started</span>
+                            <span class="hindi-text">शुरू करें</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="plan-card p-6 relative transform scale-105 z-20">
+                    <div class="diwali-badge">
+                        <span class="english-text">Best Value</span>
+                        <span class="hindi-text">सर्वोत्तम मूल्य</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="icon-container">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-playfair font-bold text-diwali-gold mb-2">
+                            <span class="english-text">Pro</span>
+                            <span class="hindi-text">प्रो</span>
+                        </h3>
+                        <div class="text-diwali-light mb-4">
+                            <span class="english-text">For growing restaurants</span>
+                            <span class="hindi-text">बढ़ते रेस्तरां के लिए</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="flex justify-center items-baseline">
+                            <span class="text-4xl font-bold text-diwali-gold">₹5,499</span>
+                            <span class="text-lg text-diwali-light ml-2 price-old">₹5,999</span>
+                        </div>
+                        <div class="text-sm text-diwali-light mt-1">
+                            <span class="english-text">Post-Diwali: ₹5,999</span>
+                            <span class="hindi-text">दिवाली के बाद: ₹5,999</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="feature-list mb-8">
+    <li>
+        <span class="english-text">Everything in Basic Plan</span>
+        <span class="hindi-text">बेसिक प्लान की सभी सुविधाएं</span>
+    </li>
+    <li>
+        <span class="english-text">Reservation / table booking via WhatsApp</span>
+        <span class="hindi-text">व्हाट्सएप के माध्यम से आरक्षण / टेबल बुकिंग</span>
+    </li>
+    <li>
+        <span class="english-text">"Book a Table" with date & time selector</span>
+        <span class="hindi-text">"टेबल बुक करें" डेट और टाइम सेलेक्टर के साथ</span>
+    </li>
+    <li>
+        <span class="english-text">Google Maps embed</span>
+        <span class="hindi-text">गूगल मैप्स एम्बेड</span>
+    </li>
+    <li>
+        <span class="english-text">Opening hours display</span>
+        <span class="hindi-text">ओपनिंग आवर्स डिस्प्ले</span>
+    </li>
+    <li>
+        <span class="english-text">About & Contact pages</span>
+        <span class="hindi-text">अबाउट और कॉन्टैक्ट पेज</span>
+    </li>
+    <li>
+        <span class="english-text">1 Year Free Hosting & Domain</span>
+        <span class="hindi-text">1 साल मुफ्त होस्टिंग और डोमेन</span>
+    </li>
+</ul>
+
+                    
+                    <div class="text-center mb-4">
+                        <div class="text-diwali-light text-sm mb-2">
+                            <span class="english-text">Maintenance: ₹500/month</span>
+                            <span class="hindi-text">मेंटेनेंस: ₹500/महीना</span>
+                        </div>
+                        <a href="https://wa.me/919422269921?text=Hi%20AmazingAds95!%20I'm%20interested%20in%20your%20Pro%20website%20package%20for%20₹5,499.%20Please%20share%20more%20details." class="diwali-btn w-full" target="_blank">
+                            <span class="english-text">Get Started</span>
+                            <span class="hindi-text">शुरू करें</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="plan-card p-6 relative">
+                    <div class="diwali-badge">
+                        <span class="english-text">Ultimate</span>
+                        <span class="hindi-text">अंतिम</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="icon-container">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-playfair font-bold text-diwali-gold mb-2">
+                            <span class="english-text">Premium</span>
+                            <span class="hindi-text">प्रीमियम</span>
+                        </h3>
+                        <div class="text-diwali-light mb-4">
+                            <span class="english-text">Complete restaurant solution</span>
+                            <span class="hindi-text">पूर्ण रेस्तरां समाधान</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="flex justify-center items-baseline">
+                            <span class="text-4xl font-bold text-diwali-gold">₹8,499</span>
+                            <span class="text-lg text-diwali-light ml-2 price-old">₹11,999</span>
+                        </div>
+                        <div class="text-sm text-diwali-light mt-1">
+                            <span class="english-text">Post-Diwali: ₹11,999</span>
+                            <span class="hindi-text">दिवाली के बाद: ₹11,999</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="feature-list mb-8">
+    <li>
+        <span class="english-text">All Pro features</span>
+        <span class="hindi-text">प्रो की सभी सुविधाएं</span>
+    </li>
+    <li>
+        <span class="english-text">Add-to-cart system</span>
+        <span class="hindi-text">एड-टू-कार्ट सिस्टम</span>
+    </li>
+    <li>
+        <span class="english-text">Total calculation + structured WhatsApp order</span>
+        <span class="hindi-text">टोटल कैलकुलेशन + स्ट्रक्चर्ड व्हाट्सएप ऑर्डर</span>
+    </li>
+    <li>
+        <span class="english-text">Reservation system</span>
+        <span class="hindi-text">रिजर्वेशन सिस्टम</span>
+    </li>
+    <li>
+        <span class="english-text">Review section (optional)</span>
+        <span class="hindi-text">रिव्यू सेक्शन (ऑप्शनल)</span>
+    </li>
+    <li>
+        <span class="english-text">1 Year Free Hosting & Domain</span>
+        <span class="hindi-text">1 साल मुफ्त होस्टिंग और डोमेन</span>
+    </li>
+</ul>
+                    
+                    <div class="text-center mb-4">
+                        <div class="text-diwali-light text-sm mb-2">
+                            <span class="english-text">Maintenance: ₹800/month</span>
+                            <span class="hindi-text">मेंटेनेंस: ₹800/महीना</span>
+                        </div>
+                        <a href="https://wa.me/919422269921?text=Hi%20AmazingAds95!%20I'm%20interested%20in%20your%20Premium%20website%20package%20for%20₹8,499.%20Please%20share%20more%20details." class="diwali-btn w-full" target="_blank">
+                            <span class="english-text">Get Started</span>
+                            <span class="hindi-text">शुरू करें</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Features Comparison -->
+            <div class="bg-gradient-to-br from-diwali-red/10 to-diwali-orange/10 rounded-2xl p-8 border border-diwali-gold/30 mb-12">
+                <h2 class="text-3xl font-playfair font-bold text-diwali-gold text-center mb-8">
+                    <span class="english-text">All Plans Include</span>
+                    <span class="hindi-text">सभी प्लान में शामिल</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="icon-container mx-auto mb-3">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-diwali-light mb-2">
+                            <span class="english-text">2-Day Delivery</span>
+                            <span class="hindi-text">2-दिन डिलीवरी</span>
+                        </h3>
+                        <p class="text-diwali-light">
+                            <span class="english-text">Website ready in just 48 hours</span>
+                            <span class="hindi-text">वेबसाइट सिर्फ 48 घंटे में तैयार</span>
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="icon-container mx-auto mb-3">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-diwali-light mb-2">
+                            <span class="english-text">Mobile Friendly</span>
+                            <span class="hindi-text">मोबाइल फ्रेंडली</span>
+                        </h3>
+                        <p class="text-diwali-light">
+                            <span class="english-text">Works perfectly on all devices</span>
+                            <span class="hindi-text">सभी डिवाइस पर परफेक्ट काम करता है</span>
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="icon-container mx-auto mb-3">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5l7.51-3.49L17.5 6.5 9.99 9.99 6.5 17.5zm5.5-6.6c.61 0 1.1.49 1.1 1.1s-.49 1.1-1.1 1.1-1.1-.49-1.1-1.1.49-1.1 1.1-1.1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-diwali-light mb-2">
+                            <span class="english-text">Custom Design</span>
+                            <span class="hindi-text">कस्टम डिज़ाइन</span>
+                        </h3>
+                        <p class="text-diwali-light">
+                            <span class="english-text">Tailored to your restaurant theme</span>
+                            <span class="hindi-text">आपके रेस्तरां थीम के अनुसार</span>
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="icon-container mx-auto mb-3">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-diwali-light mb-2">
+                            <span class="english-text">Free Hosting</span>
+                            <span class="hindi-text">मुफ्त होस्टिंग</span>
+                        </h3>
+                        <p class="text-diwali-light">
+                            <span class="english-text">1 year free hosting & domain</span>
+                            <span class="hindi-text">1 साल मुफ्त होस्टिंग और डोमेन</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Websites Section -->
+    <section id="demos" class="py-16 bg-gradient-to-b from-diwali-red/5 to-transparent relative z-10 fade-in">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-playfair font-bold text-diwali-gold section-title">
+                    <span class="english-text">Live Demo Websites</span>
+                    <span class="hindi-text">लाइव डेमो वेबसाइट</span>
+                </h2>
+                <p class="text-xl text-diwali-light max-w-3xl mx-auto">
+                    <span class="english-text">See our work in action with these live restaurant websites</span>
+                    <span class="hindi-text">इन लाइव रेस्तरां वेबसाइटों के साथ हमारे काम को देखें</span>
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="demo-card p-6 text-center">
+                    <div class="icon-container mx-auto mb-4">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5l7.51-3.49L17.5 6.5 9.99 9.99 6.5 17.5zm5.5-6.6c.61 0 1.1.49 1.1 1.1s-.49 1.1-1.1 1.1-1.1-.49-1.1-1.1.49-1.1 1.1-1.1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-diwali-light mb-2">
+                        <span class="english-text">Bakery Demo</span>
+                        <span class="hindi-text">बेकरी डेमो</span>
+                    </h3>
+                    <p class="text-diwali-light mb-4">
+                        <span class="english-text">Beautiful bakery website with online ordering</span>
+                        <span class="hindi-text">ऑनलाइन ऑर्डरिंग के साथ सुंदर बेकरी वेबसाइट</span>
+                    </p>
+                    <a href="https://amazingds95-bakery-demo.vercel.app/" class="diwali-btn" target="_blank">
+                        <span class="english-text">View Demo</span>
+                        <span class="hindi-text">डेमो देखें</span>
+                    </a>
+                </div>
+
+                <div class="demo-card p-6 text-center">
+                    <div class="icon-container mx-auto mb-4">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-diwali-light mb-2">
+                        <span class="english-text">Spice Restaurant</span>
+                        <span class="hindi-text">मसाला रेस्तरां</span>
+                    </h3>
+                    <p class="text-diwali-light mb-4">
+                        <span class="english-text">Elegant restaurant with table booking</span>
+                        <span class="hindi-text">टेबल बुकिंग के साथ सुंदर रेस्तरां</span>
+                    </p>
+                    <a href="https://amazingads95-hspice-restro-demo.vercel.app/" class="diwali-btn" target="_blank">
+                        <span class="english-text">View Demo</span>
+                        <span class="hindi-text">डेमो देखें</span>
+                    </a>
+                </div>
+
+                <div class="demo-card p-6 text-center">
+                    <div class="icon-container mx-auto mb-4">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-diwali-light mb-2">
+                        <span class="english-text">Fine Dining</span>
+                        <span class="hindi-text">फाइन डाइनिंग</span>
+                    </h3>
+                    <p class="text-diwali-light mb-4">
+                        <span class="english-text">Premium restaurant with full features</span>
+                        <span class="hindi-text">पूर्ण सुविधाओं के साथ प्रीमियम रेस्तरां</span>
+                    </p>
+                    <a href="https://amazingads95-restro-demo.vercel.app/" class="diwali-btn" target="_blank">
+                        <span class="english-text">View Demo</span>
+                        <span class="hindi-text">डेमो देखें</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-16 relative z-10 fade-in">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-playfair font-bold text-diwali-gold section-title">
+                <span class="english-text">Ready to Shine This Diwali?</span>
+                <span class="hindi-text">क्या आप इस दिवाली चमकने के लिए तैयार हैं?</span>
+            </h2>
+            <p class="text-xl text-diwali-light mb-6 max-w-2xl mx-auto">
+                <span class="english-text">Contact now to get your website ready before Diwali!</span>
+                <span class="hindi-text">अभी संपर्क करें और दीवाली से पहले अपनी वेबसाइट तैयार कराएं!</span>
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                <a href="https://wa.me/919422269921?text=Hi%20AmazingAds95!%20I'm%20interested%20in%20your%20Diwali%20website%20offer.%20Please%20share%20more%20details." class="diwali-btn text-lg px-8 py-4" target="_blank">
+                    <i class="fab fa-whatsapp mr-2"></i> 
+                    <span class="english-text">Chat on WhatsApp</span>
+                    <span class="hindi-text">व्हाट्सएप पर चैट करें</span>
+                </a>
+                <a href="mailto:amazingads95@gmail.com?subject=Diwali Website Offer - AmazingAds95&body=Hi AmazingAds95,%0D%0A%0D%0AI'm interested in your Diwali website packages for my restaurant. Please share more details about:%0D%0A%0D%0A- Package options and features%0D%0A- Pricing and payment methods%0D%0A- Timeline for delivery%0D%0A- Any other requirements%0D%0A%0D%0AThank you!" class="border-2 border-diwali-gold text-diwali-gold font-semibold px-8 py-4 rounded-3xl transition-all duration-300 hover:bg-diwali-gold hover:text-diwali-dark">
+    <i class="fas fa-envelope mr-2"></i> 
+    <span class="english-text">Email Us</span>
+    <span class="hindi-text">ईमेल करें</span>
+</a>
+            </div>
+            <div class="bg-gradient-to-r from-diwali-red/10 to-diwali-orange/10 p-6 rounded-2xl border border-diwali-gold/30 max-w-2xl mx-auto">
+                <p class="text-diwali-light">
+                    <i class="fas fa-gift text-diwali-gold mr-2"></i>
+                    <span class="english-text"><span class="font-bold">Special Diwali Bonus:</span> Free domain name for first year with every plan!</span>
+                    <span class="hindi-text"><span class="font-bold">विशेष दिवाली बोनस:</span> हर प्लान के साथ पहले साल के लिए मुफ्त डोमेन नाम!</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-diwali-gold/20 relative z-10">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-playfair font-bold text-diwali-gold mb-4">AmazingAds95</h3>
+                    <p class="text-diwali-light mb-4">
+                        <span class="english-text">Professional website solutions for restaurants with fast delivery and excellent support.</span>
+                        <span class="hindi-text">तेज डिलीवरी और उत्कृष्ट सहायता के साथ रेस्तरां के लिए पेशेवर वेबसाइट समाधान।</span>
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold text-diwali-light mb-4">
+                        <span class="english-text">Contact Info</span>
+                        <span class="hindi-text">संपर्क जानकारी</span>
+                    </h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-diwali-gold mr-3 mt-1"></i>
+                            <a href="mailto:amazingads95@gmail.com?subject=Website Inquiry - AmazingAds95" class="text-diwali-light hover:text-diwali-gold">amazingads95@gmail.com</a>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fab fa-whatsapp text-diwali-gold mr-3 mt-1"></i>
+                            <a href="https://wa.me/919422269921" class="text-diwali-light hover:text-diwali-gold" target="_blank">
+                                <span class="english-text">Chat on WhatsApp</span>
+                                <span class="hindi-text">व्हाट्सएप पर चैट करें</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold text-diwali-light mb-4">
+                        <span class="english-text">Quick Links</span>
+                        <span class="hindi-text">त्वरित लिंक</span>
+                    </h4>
+                    <ul class="space-y-2">
+                        <li><a href="#packages" class="text-diwali-light hover:text-diwali-gold transition-colors quick-link">
+                            <span class="english-text">Packages</span>
+                            <span class="hindi-text">पैकेज</span>
+                        </a></li>
+                        <li><a href="#demos" class="text-diwali-light hover:text-diwali-gold transition-colors quick-link">
+                            <span class="english-text">Demos</span>
+                            <span class="hindi-text">डेमो</span>
+                        </a></li>
+                        <li><a href="#contact" class="text-diwali-light hover:text-diwali-gold transition-colors quick-link">
+                            <span class="english-text">Contact</span>
+                            <span class="hindi-text">संपर्क</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center pt-8 border-t border-diwali-gold/20">
+                <p class="text-diwali-light">
+                    <span class="english-text">Offer valid until Diwali 2025 (October 18-23) | Terms & Conditions Apply</span>
+                    <span class="hindi-text">ऑफर दिवाली 2025 (18-23 अक्टूबर) तक वैध | नियम और शर्तें लागू</span>
+                </p>
+                <p class="text-diwali-gold font-bold mt-2">
+                    <span class="english-text">Crafted with ❤️ for the restaurant community by AmazingAds95</span>
+                    <span class="hindi-text">AmazingAds95 द्वारा रेस्तरां समुदाय के लिए ❤️ के साथ तैयार</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language toggle functionality
+        function setupLanguageToggle() {
+            const languageToggle = document.getElementById('languageToggle');
+            const body = document.body;
+            
+            languageToggle.addEventListener('click', function() {
+                body.classList.toggle('language-hindi');
+                
+                // Update toggle button text
+                if (body.classList.contains('language-hindi')) {
+                    languageToggle.innerHTML = '<span class="english-text">English</span><span class="hindi-text">हिंदी</span>';
+                } else {
+                    languageToggle.innerHTML = '<span class="english-text">English</span><span class="hindi-text">हिंदी</span>';
+                }
+            });
+        }
+        
+        // Smooth scrolling for quick links
+        function setupSmoothScrolling() {
+            document.querySelectorAll('.quick-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        const headerHeight = 80;
+                        const targetPosition = targetElement.offsetTop - headerHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            setupLanguageToggle();
+            setupSmoothScrolling();
+            
+            // Add click handlers for buttons
+            document.querySelectorAll('.diwali-btn').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    if (!this.getAttribute('href').startsWith('http')) {
+                        e.preventDefault();
+                        alert('Thank you for your interest! Please contact us on WhatsApp to get started with your Diwali website offer.');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
